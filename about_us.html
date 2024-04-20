@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(image/banner\ angkor\ wat.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 70%;
+            height: 60%;
+            box-shadow: 0 0 20px rgb(68, 255, 0);
+            border-radius: 20px;
+            margin: auto;
+            padding-top: 20px;
+            box-sizing: border-box;
+            margin-top: 70px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            animation: border_style 10s infinite;
+        }
+
+        @keyframes border_style {
+            0% {
+                box-shadow: 0 0 20px rgb(0, 0, 255);
+            }
+
+            25% {
+                box-shadow: 0 0 20px rgb(255, 0, 0);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgb(4, 255, 0);
+            }
+
+            75% {
+                box-shadow: 0 0 20px rgb(255, 0, 204);
+            }
+
+            100% {
+                box-shadow: 0 0 20px rgb(0, 208, 255);
+            }
+        }
+
+        .head {
+            width: 100%;
+            height: 150px;
+            margin: auto;
+        }
+
+        .body {
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        .logo {
+            width: 130px;
+            height: 150px;
+            float: left;
+            border-radius: 50%;
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+        .logo>img {
+            width: 130px;
+            border-radius: 50%;
+            height: 150px;
+        }
+
+        .name {
+            width: 380px;
+            height: 100%;
+            float: right;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 25px;
+            margin-right: 400px;
+        }
+
+        .name>p {
+            font-family: Khmer OS Muol Light;
+            color: rgb(82, 37, 26);
+            font-size: 25px;
+        }
+
+        .education {
+            width: 90%;
+            height: 160px;
+            margin: auto;
+            box-sizing: border-box;
+            padding-top: 10px;
+        }
+
+        .education>h3 {
+            font-family: Akbalthom Kbach;
+            color: rgb(247, 81, 81);
+            margin: 0;
+        }
+
+        .education>ul {
+            margin: 0;
+        }
+
+        .education>ul>li {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgb(255, 249, 249);
+        }
+
+        .skill {
+            width: 90%;
+            height: 100px;
+            margin: auto;
+            box-sizing: border-box;
+            padding-top: 10px;
+        }
+
+        .skill>h3 {
+            font-family: Akbalthom Kbach;
+            color: rgb(247, 81, 81);
+            margin: 0;
+        }
+
+        .skill>ul {
+            margin: 0;
+        }
+
+        .skill>ul>li {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgb(255, 255, 255);
+        }
+
+        .address {
+            width: 90%;
+            height: 130px;
+            margin: auto;
+            box-sizing: border-box;
+            padding-top: 10px;
+        }
+
+        .address>h3 {
+            font-family: Akbalthom Kbach;
+            color: rgb(247, 81, 81);
+            margin: 0;
+        }
+
+        .address>ul {
+            margin: 0;
+        }
+
+        .address>ul>li {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgb(255, 255, 255);
+        }
+
+        .style_left {
+            width: 442px;
+            height: 100%;
+            background-color: rgb(229, 255, 0);
+            position: absolute;
+            margin-top: -560px;
+            margin-left: 635px;
+            clip-path: polygon(20% 0%, 100% 0, 100% 100%, 20% 100%, 0 87%, 0 20%);
+            border-radius: 20px;
+            animation: slide 10s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                background-color: blue;
+            }
+
+            25% {
+                background-color: rgb(255, 0, 0);
+            }
+
+            50% {
+                background-color: rgb(0, 255, 0);
+            }
+
+            75% {
+                background-color: rgb(255, 0, 225);
+            }
+
+            100% {
+                background-color: rgb(0, 255, 234);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="size_page">
+        <div class="header_us">
+            <div class="menu_bar">
+                <div class="menu_icon">
+                    <a href="#"><img src="image/list.png" width="45px" alt="" style="margin: 15px 20px;"></a>
+                    <ul>
+                        <li><a href="maintanence.html">Maintanan-PC</a></li>
+                        <li><a href="programming.html">Programming</a></li>
+                        <li><a href="web.html">Webdevelopment</a></li>
+                        <li><a href="picture.html">design-Image</a></li>
+                        <li><a href="video.html">VideoEditor</a></li>
+                        <li><a href="drawing.html">Drawing Image</a></li>
+                    </ul>
+
+                </div>
+                <div class="text_menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html"><img src="image/home(1).png" alt="">Home</a></li>
+                            <li><a href="about_us.html"><img src="image/information.png" alt="">About Me</a></li>
+                            <li><a href="contact.html"><img src="image/notebook-of-contacts.png" alt="">Contact</a></li>
+                            <li><a href="https://www.google.com/"><img src="image/menu(2).png" alt="">Other</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="border">
+                <div class="container">
+                    <div class="head">
+                        <div class="logo"><img src="image/my pic.jpg" alt=""></div>
+                        <div class="name">
+                            <p>ឈ្មោះ ៖ ហួត​ ផានិត</p>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="education">
+                            <h3>EDUCATION</h3>
+                            <ul>
+                                <li>2011-2016 : Study at Primery School</li>
+                                <li>2017-2019 : Study at Second School</li>
+                                <li>2020-2022 : Study at Hight School</li>
+                                <li>2023-Now : Study at SETEC INstitute</li>
+                                </ol>
+                        </div>
+                        <div class="skill">
+                            <h3>PLANCE IN THE FUTURE</h3>
+                            <ul>
+                                <li>Programmer (Application and Webdevelopment)</li>
+                                <li>Networking and Computer maintanence</li>
+                            </ul>
+                        </div>
+                        <div class="address">
+                            <h3>ADDRESS</h3>
+                            <ul>
+                                <li>Now : Borey100Knong Tektla Sensohk Phnom Penh</li>
+                                <li>Home Land : Bengva Trachtong Oudong Kampongspeu</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="style_left">
+                        <img src="image/logo_burth.png" width="80%5"
+                            style="margin-top: 100px; margin-left: 50px; filter:brightness(0) invert(1);" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="foter">
+                <img src="image/footer image.png" width="100%" style="margin-top: 93px;" alt="">
+            </div>
+        </div>
+</body>
+
+</html>

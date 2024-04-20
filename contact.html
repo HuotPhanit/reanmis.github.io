@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(image/banner\ angkor\ wat.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 70%;
+            height: 60%;
+            box-shadow: 0 0 20px rgb(68, 255, 0);
+            border-radius: 20px;
+            margin: auto;
+            padding-top: 20px;
+            box-sizing: border-box;
+            margin-top: 70px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            animation: border_style 10s infinite;
+            box-sizing: border-box;
+            padding-bottom: 40px;
+        }
+
+        @keyframes border_style {
+            0% {
+                box-shadow: 0 0 20px rgb(0, 0, 255);
+            }
+
+            25% {
+                box-shadow: 0 0 20px rgb(255, 0, 0);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgb(4, 255, 0);
+            }
+
+            75% {
+                box-shadow: 0 0 20px rgb(255, 0, 204);
+            }
+
+            100% {
+                box-shadow: 0 0 20px rgb(0, 208, 255);
+            }
+        }
+
+        .head {
+            width: 100%;
+            height: 150px;
+            margin: auto;
+        }
+
+        .body {
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        .name {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .name>p {
+            margin-top: -10px;
+            font-family: Akbalthom Kbach;
+            color: rgb(82, 37, 26);
+            font-size: 40px;
+        }
+
+        .education {
+            width: 90%;
+            height: 160px;
+            margin: auto;
+            box-sizing: border-box;
+            margin-top: -60px;
+        }
+
+        .education>h3 {
+            font-family: Akbalthom Kbach;
+            color: rgb(255, 120, 120);
+            margin-top: -20px;
+        }
+
+        .education>ul {
+            margin-top: -20px;
+        }
+
+        .education>ul>li {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgb(255, 249, 249);
+        }
+
+        .contact {
+            width: 70%;
+            height: 160px;
+            margin-top: 30px;
+            margin-left: 170px;
+            align-content: center;
+            display: inline-flex;
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            margin: 40px;
+            flex-direction: column;
+        }
+
+        .icon>span>a>img {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(182, 182, 182);
+            border-radius: 50%;
+            padding: 15px;
+            border: 2px solid black;
+        }
+
+        .icon .title {
+            width: 130px;
+            height: 40px;
+            background-color: aqua;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            right: 30px;
+            box-sizing: border-box;
+            padding-top: 5px;
+            bottom: 5px;
+            opacity: 0;
+            font-family: Akbalthom Kbach;
+            color: white;
+        }
+
+        .icon .title::before {
+            width: 15px;
+            height: 15px;
+            background-color: aqua;
+            position: absolute;
+            z-index: 3;
+            transform: rotate(45deg);
+            content: "";
+            top: 33px;
+            left: 55px;
+        }
+
+        .icon:hover .title::before {
+            transition: 1s;
+        }
+
+        .icon:hover .title {
+            opacity: 1;
+            transition: 1s;
+            transform: translateY(-20px);
+            box-shadow: 0 0 10px rgb(255, 255, 0);
+        }
+
+        .facebook:hover .title,
+        .facebook:hover .title::before {
+            background-color: rgb(21, 0, 255);
+            color: white;
+        }
+
+        .facebook:hover>span>a>img {
+            background-color: rgb(21, 0, 255);
+            box-shadow: 0 0 10px rgb(255, 255, 0);
+            transition: 1s;
+            border: none;
+        }
+
+        .youtube:hover .title,
+        .youtube:hover .title::before {
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+
+        .youtube:hover>span>a>img {
+            background-color: rgb(255, 0, 0);
+            box-shadow: 0 0 10px rgb(255, 255, 0);
+            transition: 1s;
+            border: none;
+        }
+
+        .tiktok:hover .title,
+        .tiktok:hover .title::before {
+            background-color: rgb(38, 38, 38);
+            color: white;
+        }
+
+        .tiktok:hover>span>a>img {
+            background-color: rgb(38, 38, 38);
+            box-shadow: 0 0 10px rgb(255, 255, 0);
+            transition: 1s;
+        }
+
+        .telegram:hover .title,
+        .telegram:hover .title::before {
+            background-color: rgb(0, 149, 255);
+            color: white;
+        }
+
+        .telegram:hover>span>a>img {
+            background-color: rgb(0, 149, 255);
+            box-shadow: 0 0 10px rgb(255, 255, 0);
+            transition: 1s;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="size_page">
+        <div class="header_us">
+            <div class="menu_bar">
+                <div class="menu_icon">
+                    <a href="#"><img src="image/list.png" width="45px" alt="" style="margin: 15px 20px;"></a>
+                    <ul>
+                        <li><a href="maintanence.html">Maintanan-PC</a></li>
+                        <li><a href="programming.html">Programming</a></li>
+                        <li><a href="web.html">Webdevelopment</a></li>
+                        <li><a href="picture.html">design-Image</a></li>
+                        <li><a href="video.html">VideoEditor</a></li>
+                        <li><a href="drawing.html">Drawing Image</a></li>
+                    </ul>
+
+                </div>
+                <div class="text_menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html"><img src="image/home(1).png" alt="">Home</a></li>
+                            <li><a href="about_us.html"><img src="image/information.png" alt="">About Me</a></li>
+                            <li><a href="contact.html"><img src="image/notebook-of-contacts.png" alt="">Contact</a></li>
+                            <li><a href="https://www.google.com/"><img src="image/menu(2).png" alt="">Other</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="border">
+                <div class="container">
+                    <div class="border">
+                            <div class="head">
+                                <div class="name">
+                                    <p>Contact Me</p>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="education">
+                                    <h3>Well come to my block. You can go to download file lession to study.I'm
+                                        sorry for my mistake on
+                                        block.</h3>
+                                    <h3>SUBJECT FILE PDF</h3>
+                                    <ul>
+                                        <li>Computer Maintanance and Repair</li>
+                                        <li>Programming Language</li>
+                                        <li>Webdevelopment</li>
+                                        <li>Networking and Camera Security</li>
+                                        </ol>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="icon facebook">
+                                    <div class="title">Facebook</div>
+                                    <span><a
+                                            href="https://www.facebook.com/profile.php?id=61555834986356&mibextid=ZbWKwL"><img
+                                                src="image/facebook-logo.png" alt=""></a></span>
+                                </div>
+                                <div class="icon youtube">
+                                    <div class="title">Youtube</div>
+                                    <span><a href="https://www.youtube.com/@PhanitHuot"><img src="image/youtube.png"
+                                                alt=""></a></span>
+                                </div>
+                                <div class="icon tiktok">
+                                    <div class="title">Tiktok</div>
+                                    <span><a href="https://www.tiktok.com/@huotphanit"><img src="image/tik-tok.png"
+                                                alt=""></a></span>
+                                </div>
+                                <div class="icon telegram">
+                                    <div class="title">Telegram</div>
+                                    <span><a href="http://t.me/Huotphanit202"><img src="image/telegram (1).png "
+                                                alt=""></a></span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="foter">
+                    <img src="image/footer image.png" width="100%" style="margin-top: 93px;" alt="">
+                </div>
+            </div>
+</body>
+
+</html>
